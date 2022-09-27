@@ -64,3 +64,11 @@ const fn2 = fn1(3);
 const fn3 = fn2(3);
 const fn4 = fn3(3);
 console.log(fn4);
+
+import { pipe } from './pipe';
+
+console.log('composition');
+const addOne = (n) => n + 1;
+const double = (n) => n * 2;
+const add1ThenDouble = pipe(double, addOne);
+console.log(add1ThenDouble(2));
