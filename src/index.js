@@ -72,3 +72,39 @@ const addOne = (n) => n + 1;
 const double = (n) => n * 2;
 const add1ThenDouble = pipe(double, addOne);
 console.log(add1ThenDouble(2));
+
+const data = [
+  {
+    name: 'bananas',
+    price: 3.99,
+    category: 'fruit',
+  },
+  {
+    name: 'apples',
+    price: 1.0,
+    category: 'fruit',
+  },
+  {
+    name: 'milk',
+    price: 2.0,
+    category: 'dairy',
+  },
+  {
+    name: 'cheese',
+    price: 1.0,
+    category: 'dairy',
+  },
+];
+
+const getByCategory = (arr, desc) => {
+  return arr.filter((i) => i.category == desc);
+};
+
+const curriedGetByCategory = curry(getByCategory);
+const getFruits = curriedGetByCategory(data)('fruit');
+console.log(getFruits);
+const getCategories = curriedGetByCategory(data);
+const dairy = getCategories('dairy');
+console.log(dairy);
+const fruits = getCategories('fruit');
+console.log(fruits);
