@@ -13,3 +13,7 @@ here we are creating an actual dataset and sorting by a numerical value on that 
 ## branch 3
 
 now we are going to adapt our sorting algorithm to handle sorting by strings
+
+## branch 4
+
+now lets add some date sorting to our algorithm
