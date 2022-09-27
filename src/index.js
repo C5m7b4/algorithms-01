@@ -96,15 +96,29 @@ const data = [
   },
 ];
 
-const getByCategory = (arr, desc) => {
-  return arr.filter((i) => i.category == desc);
+// const getByCategory = (arr, desc) => {
+//   return arr.filter((i) => i.category == desc);
+// };
+
+// const curriedGetByCategory = curry(getByCategory);
+// const getFruits = curriedGetByCategory(data)('fruit');
+// console.log(getFruits);
+// const getCategories = curriedGetByCategory(data);
+// const dairy = getCategories('dairy');
+// console.log(dairy);
+// const fruits = getCategories('fruit');
+// console.log(fruits);
+
+const getFruits = (arr) => {
+  return arr.filter((i) => i.category === 'fruit');
 };
 
-const curriedGetByCategory = curry(getByCategory);
-const getFruits = curriedGetByCategory(data)('fruit');
-console.log(getFruits);
-const getCategories = curriedGetByCategory(data);
-const dairy = getCategories('dairy');
-console.log(dairy);
-const fruits = getCategories('fruit');
-console.log(fruits);
+const getTotal = (n) => {
+  return n.reduce((acc, curr) => {
+    return parseFloat(acc) + parseFloat(curr.price);
+  }, 0);
+};
+
+const fruitTotal = pipe(getTotal, getFruits);
+const fruitTotals = fruitTotal(data);
+console.log(fruitTotals);
