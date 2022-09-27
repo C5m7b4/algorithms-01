@@ -4,4 +4,13 @@ const add = (x) => {
   };
 };
 
-export { add };
+const curry = (fn) => {
+  return function curried(...args) {
+    if (fn.length !== args.length) {
+      return curried.bind(null, ...args);
+    }
+    return fn(...args);
+  };
+};
+
+export { add, curry };
