@@ -123,10 +123,14 @@ const data = [
 // const fruitTotals = fruitTotal(data);
 // console.log(fruitTotals);
 
-console.log('memoizing again...');
-const times5 = (x) => x * 5;
-import { memoize } from './memoize';
-const memoized = memoize(times5);
-console.log(memoized(2));
-console.log(memoized(10));
-console.log(memoized(10));
+// console.log('memoizing again...');
+// const times5 = (x) => x * 5;
+// import { memoize } from './memoize';
+// const memoized = memoize(times5);
+// console.log(memoized(2));
+// console.log(memoized(10));
+// console.log(memoized(10));
+
+console.log('factorials');
+import { computeFactorial } from './factorial';
+console.log(computeFactorial(5));
