@@ -26,6 +26,7 @@ const emps = [
   {
     id: 5,
     name: 'john',
+    age: 10,
     birthdate: new Date('1/1/2022'),
   },
 ];

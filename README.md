@@ -17,3 +17,7 @@ now we are going to adapt our sorting algorithm to handle sorting by strings
 ## branch 4
 
 now lets add some date sorting to our algorithm
+
+## branch 5
+
+Now we need to take into consideration seperation of concerns. We should really seperate out the unique functionality and the sort functionality. These should really be two seperate things.
