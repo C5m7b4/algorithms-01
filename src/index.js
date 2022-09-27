@@ -10,6 +10,11 @@ child.innerHTML = 'Hello';
 main.appendChild(child);
 root.appendChild(main);
 
-import { uniqSort } from './sort';
+import { uniquSortObj } from './sort';
 // console.log(uniqSort([4, 2, 2, 3, 2, 2, 2]));
-console.log(uniqSort([4, 3, 3, 2, 2, 1], false));
+//console.log(uniqSort([4, 3, 3, 2, 2, 1], false));
+
+import { emps } from './data';
+
+console.log(uniquSortObj(emps, 'age', true));
+console.log(uniquSortObj(emps, 'age', false));
