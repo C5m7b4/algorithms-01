@@ -29,10 +29,16 @@ root.appendChild(main);
 // import { sort } from './sort';
 // console.log(sort(sortedEmps, 'birthdate', false));
 
-import { memoTimes10 } from './memoize';
+// import { memoTimes10 } from './memoize';
 // console.log('calculated value', memoTimes10(9));
 // console.log('cached value', memoTimes10(9));
 
-const memoFn = memoTimes10();
-console.log(memoFn(9));
-console.log(memoFn(9));
+// const memoFn = memoTimes10();
+// console.log(memoFn(9));
+// console.log(memoFn(9));
+
+import { add } from './curry1';
+const addTwo = add(2);
+console.log(addTwo);
+console.log(addTwo(4));
+console.log(addTwo(10));
