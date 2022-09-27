@@ -38,3 +38,7 @@ It's really the same concept, but we could have a generic curry function or we c
 ## branch 9
 
 Let's take a look at how you can curry functions and use partial application/currying to make deffered functions.
+
+## branch 10
+
+Now, let's add a pipe function for composition
