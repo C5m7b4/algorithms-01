@@ -37,8 +37,30 @@ root.appendChild(main);
 // console.log(memoFn(9));
 // console.log(memoFn(9));
 
-import { add } from './curry1';
-const addTwo = add(2);
-console.log(addTwo);
-console.log(addTwo(4));
-console.log(addTwo(10));
+import { curry } from './curry1';
+// const addTwo = add(2);
+// console.log(addTwo);
+// console.log(addTwo(4));
+// console.log(addTwo(10));
+
+const multiply = (x, y) => {
+  return x * y;
+};
+
+const times2 = curry(multiply);
+//const result = times2(5)(2);
+const curriedTimes = times2(5);
+const result = curriedTimes(2);
+console.log(result);
+
+const takes3Args = (x, y, z) => {
+  return x + y + z;
+};
+
+// const curriedTakes3 = curry(takes3Args)(1)(2)(3);
+// console.log(curriedTakes3);
+const fn1 = curry(takes3Args);
+const fn2 = fn1(3);
+const fn3 = fn2(3);
+const fn4 = fn3(3);
+console.log(fn4);
