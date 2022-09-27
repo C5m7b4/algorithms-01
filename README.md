@@ -62,3 +62,7 @@ Let's build an iterative factorial function that we can then improve on using re
 ## branch 15
 
 Now let's convert our factorial function to use recursion instead of regular for loops
+
+## branch 16
+
+Let's convert this logNumber function to run recursively

@@ -135,5 +135,11 @@ const data = [
 // import { computeFactorial } from './factorial';
 // console.log(computeFactorial(5));
 
-import { computeFactorialRecursively } from './factorial';
-console.log(computeFactorialRecursively(5));
+// import { computeFactorialRecursively } from './factorial';
+// console.log(computeFactorialRecursively(5));
+
+// import { logNumbers } from './looping';
+// logNumbers(1, 5);
+
+import { logNumbersRecursively } from './looping';
+logNumbersRecursively(1, 5);
