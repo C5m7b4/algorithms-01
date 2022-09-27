@@ -171,7 +171,21 @@ import { sort } from './sort';
 // console.log('searching by age');
 
 // console.log(binarySearchObjArr(sortedEmps, 'age', 50));
-let sortedEmps = sort(emps, 'name', true);
-console.log(sortedEmps);
-console.log('searching by name');
-console.log(binarySearchObjArr(sortedEmps, 'name', 'john'));
+// let sortedEmps = sort(emps, 'name', true);
+// console.log(sortedEmps);
+// console.log('searching by name');
+// console.log(binarySearchObjArr(sortedEmps, 'name', 'john'));
+
+import { bubbleSort, bubbleSortOptimized } from './bubbleSort';
+const arrayRandom = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
+const arrayOrderd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+console.log('bubble sort');
+console.log(bubbleSort(arrayRandom.slice()));
+console.log(bubbleSort(arrayOrderd.slice()));
+console.log(bubbleSort(arrayReversed.slice()));
+
+console.log('optimized');
+console.log(bubbleSortOptimized(arrayRandom.slice()));
+console.log(bubbleSortOptimized(arrayOrderd.slice()));
+console.log(bubbleSortOptimized(arrayReversed.slice()));

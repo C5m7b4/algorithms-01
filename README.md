@@ -82,3 +82,7 @@ Utilize a Linear search to find a number in an array of numbers and then also tr
 ## branch 20
 
 Implement a Binary Search function. In order for Binary search to work the list must already be sorted. We can prove this out and then use our sorting function to sort our data and then use the binary search to get what we are after.
+
+## branch 21
+
+Let's develop a bubble sort and an optimized bubble sort for arrays of numbers
