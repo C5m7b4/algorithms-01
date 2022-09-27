@@ -74,3 +74,7 @@ Turn logNumber into a recursive function
 ## branch 18
 
 Now can memoize our factorial function
+
+## branch 19
+
+Utilize a Linear search to find a number in an array of numbers and then also transform that Linear search to search through an array of objects. That seems more real-life to me.
