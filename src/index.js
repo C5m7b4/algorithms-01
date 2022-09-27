@@ -9,3 +9,7 @@ const child = document.createElement('p');
 child.innerHTML = 'Hello';
 main.appendChild(child);
 root.appendChild(main);
+
+import { uniqSort } from './sort';
+// console.log(uniqSort([4, 2, 2, 3, 2, 2, 2]));
+console.log(uniqSort([4, 3, 3, 2, 2, 1], false));
