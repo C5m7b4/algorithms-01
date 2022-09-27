@@ -21,3 +21,7 @@ now lets add some date sorting to our algorithm
 ## branch 5
 
 Now we need to take into consideration seperation of concerns. We should really seperate out the unique functionality and the sort functionality. These should really be two seperate things.
+
+## branch 6
+
+Let's take a look at caching function results / memoization to speed up reaccuring evaluations
