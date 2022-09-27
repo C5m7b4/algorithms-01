@@ -199,7 +199,11 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // console.log(bubbleSortObjArray(emps, 'age', true));
 // console.log(bubbleSortOptimizedObjArray(emps, 'age', false));
 
-import { mergeSort } from './mergeSort';
-// const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
-const list = [2, 9, 3, 6];
-console.log(mergeSort(list, false));
+// import { mergeSort } from './mergeSort';
+// // const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
+// const list = [2, 9, 3, 6];
+// console.log(mergeSort(list, false));
+
+import { mergeSortObjArray } from './mergeSortOjbArray';
+debugger;
+console.log(mergeSortObjArray(emps, 'age', false));
