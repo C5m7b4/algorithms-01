@@ -70,3 +70,7 @@ Let's convert this logNumber function to run recursively
 ## branch 17
 
 Turn logNumber into a recursive function
+
+## branch 18
+
+Now can memoize our factorial function

@@ -141,5 +141,13 @@ const data = [
 // import { logNumbers } from './looping';
 // logNumbers(1, 5);
 
-import { logNumbersRecursively } from './looping';
-logNumbersRecursively(1, 5);
+// import { logNumbersRecursively } from './looping';
+// logNumbersRecursively(1, 5);
+
+import { joinElements } from './accumulator';
+console.log(joinElements(['s', 'cr', 't cod', ' :) :)'], 'e'));
+
+import { factorial } from './factorial';
+console.log(factorial(5));
+// if we call this again, we wont have to do all the work
+console.log(factorial(5));
