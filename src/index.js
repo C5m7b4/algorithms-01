@@ -16,5 +16,8 @@ import { uniquSortObj } from './sort';
 
 import { emps } from './data';
 
-console.log(uniquSortObj(emps, 'name', true));
-console.log(uniquSortObj(emps, 'name', false));
+// console.log(uniquSortObj(emps, 'name', true));
+// console.log(uniquSortObj(emps, 'name', false));
+
+console.log(uniquSortObj(emps, 'birthdate', true));
+console.log(uniquSortObj(emps, 'birthdate', false));
