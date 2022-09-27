@@ -50,3 +50,7 @@ Let use some real data for currying this time before we try to pipe on some real
 ## branch 12
 
 now we are going to compose over some real data
+
+## branch 13
+
+Let's modify our memoization utilty to take a generic callback so we can memoize anything

@@ -51,7 +51,7 @@ const times2 = curry(multiply);
 //const result = times2(5)(2);
 const curriedTimes = times2(5);
 const result = curriedTimes(2);
-console.log(result);
+// console.log(result);
 
 const takes3Args = (x, y, z) => {
   return x + y + z;
@@ -63,15 +63,15 @@ const fn1 = curry(takes3Args);
 const fn2 = fn1(3);
 const fn3 = fn2(3);
 const fn4 = fn3(3);
-console.log(fn4);
+// console.log(fn4);
 
 import { pipe } from './pipe';
 
-console.log('composition');
+// console.log('composition');
 const addOne = (n) => n + 1;
 const double = (n) => n * 2;
 const add1ThenDouble = pipe(double, addOne);
-console.log(add1ThenDouble(2));
+// console.log(add1ThenDouble(2));
 
 const data = [
   {
@@ -109,16 +109,24 @@ const data = [
 // const fruits = getCategories('fruit');
 // console.log(fruits);
 
-const getFruits = (arr) => {
-  return arr.filter((i) => i.category === 'fruit');
-};
+// const getFruits = (arr) => {
+//   return arr.filter((i) => i.category === 'fruit');
+// };
 
-const getTotal = (n) => {
-  return n.reduce((acc, curr) => {
-    return parseFloat(acc) + parseFloat(curr.price);
-  }, 0);
-};
+// const getTotal = (n) => {
+//   return n.reduce((acc, curr) => {
+//     return parseFloat(acc) + parseFloat(curr.price);
+//   }, 0);
+// };
 
-const fruitTotal = pipe(getTotal, getFruits);
-const fruitTotals = fruitTotal(data);
-console.log(fruitTotals);
+// const fruitTotal = pipe(getTotal, getFruits);
+// const fruitTotals = fruitTotal(data);
+// console.log(fruitTotals);
+
+console.log('memoizing again...');
+const times5 = (x) => x * 5;
+import { memoize } from './memoize';
+const memoized = memoize(times5);
+console.log(memoized(2));
+console.log(memoized(10));
+console.log(memoized(10));

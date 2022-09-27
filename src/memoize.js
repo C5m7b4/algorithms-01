@@ -33,7 +33,22 @@ const memoTimes10 = () => {
   };
 };
 
-export { memoTimes10 };
+const memoize = (cb) => {
+  const cache = {};
+  return (n) => {
+    if (n in cache) {
+      console.log('fetching from cache', n);
+      return cache[n];
+    } else {
+      console.log('calulating result');
+      const result = cb(n);
+      cache[n] = result;
+      return result;
+    }
+  };
+};
+
+export { memoTimes10, memoize };
 
 // not that our cache is in the global scope
 // this is not a good thing
