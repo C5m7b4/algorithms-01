@@ -54,3 +54,7 @@ now we are going to compose over some real data
 ## branch 13
 
 Let's modify our memoization utilty to take a generic callback so we can memoize anything
+
+## branch 14
+
+Let's build an iterative factorial function that we can then improve on using recursion just to start getting a good feel of recursion
