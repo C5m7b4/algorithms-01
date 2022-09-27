@@ -90,3 +90,7 @@ Let's develop a bubble sort and an optimized bubble sort for arrays of numbers
 ## branch 22
 
 we added ascending and descending order to your bubble sort and created two idential bubble sorts that are capable of sorting arrays of objects ascending and descending
+
+## branch 23
+
+Now we will build out a mergeSort algorithm just for numbers
