@@ -22,7 +22,27 @@ const uniquSortObj = (arr, key, asc = true) => {
     }
   }
 
-  return result.sort((a, b) => (asc ? a[key] - b[key] : b[key] - a[key]));
+  // now we need to decide if we are sorting by number or by string or by date
+
+  return result.sort((a, b) => {
+    if (typeof a[key] === 'number') {
+      console.log('sorting numbers');
+      return asc ? a[key] - b[key] : b[key] - a[key];
+    } else if (typeof a[key] === 'string') {
+      console.log('sorting strings');
+      const sa = a[key].toLowerCase();
+      const sb = b[key].toLowerCase();
+      if (asc) {
+        if (sa < sb) return -1;
+        if (sa > sb) return 1;
+        return 0;
+      } else {
+        if (sa > sb) return -1;
+        if (sa < sb) return 1;
+        return 0;
+      }
+    }
+  });
 };
 
 export { uniqSort, uniquSortObj };
