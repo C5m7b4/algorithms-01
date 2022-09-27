@@ -66,3 +66,7 @@ Now let's convert our factorial function to use recursion instead of regular for
 ## branch 16
 
 Let's convert this logNumber function to run recursively
+
+## branch 17
+
+Turn logNumber into a recursive function
