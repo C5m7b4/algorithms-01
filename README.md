@@ -42,3 +42,7 @@ Let's take a look at how you can curry functions and use partial application/cur
 ## branch 10
 
 Now, let's add a pipe function for composition
+
+## branch 11
+
+Let use some real data for currying this time before we try to pipe on some real data
