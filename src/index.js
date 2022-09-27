@@ -14,7 +14,7 @@ root.appendChild(main);
 // console.log(uniqSort([4, 2, 2, 3, 2, 2, 2]));
 //console.log(uniqSort([4, 3, 3, 2, 2, 1], false));
 
-// import { emps } from './data';
+import { emps } from './data';
 
 // console.log(uniquSortObj(emps, 'name', true));
 // console.log(uniquSortObj(emps, 'name', false));
@@ -144,10 +144,14 @@ const data = [
 // import { logNumbersRecursively } from './looping';
 // logNumbersRecursively(1, 5);
 
-import { joinElements } from './accumulator';
-console.log(joinElements(['s', 'cr', 't cod', ' :) :)'], 'e'));
+// import { joinElements } from './accumulator';
+// console.log(joinElements(['s', 'cr', 't cod', ' :) :)'], 'e'));
 
-import { factorial } from './factorial';
-console.log(factorial(5));
-// if we call this again, we wont have to do all the work
-console.log(factorial(5));
+// import { factorial } from './factorial';
+// console.log(factorial(5));
+// // if we call this again, we wont have to do all the work
+// console.log(factorial(5));
+
+import { linearSearch, linearSearchObjArray } from './linearSearch';
+console.log(linearSearch([2, 6, 7, 90, 103], 90));
+console.log(linearSearchObjArray(emps, 'name', 'sam'));
