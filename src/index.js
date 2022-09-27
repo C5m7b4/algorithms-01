@@ -131,6 +131,9 @@ const data = [
 // console.log(memoized(10));
 // console.log(memoized(10));
 
-console.log('factorials');
-import { computeFactorial } from './factorial';
-console.log(computeFactorial(5));
+// console.log('factorials');
+// import { computeFactorial } from './factorial';
+// console.log(computeFactorial(5));
+
+import { computeFactorialRecursively } from './factorial';
+console.log(computeFactorialRecursively(5));

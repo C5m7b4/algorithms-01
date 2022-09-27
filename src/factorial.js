@@ -9,4 +9,14 @@ const computeFactorial = (num) => {
   return result;
 };
 
-export { computeFactorial };
+const computeFactorialRecursively = (num) => {
+  if (num === 1) {
+    console.log('hit the base case');
+    return 1;
+  } else {
+    console.log(`returning ${num} * computeFactorial(${num - 1})`);
+    return num * computeFactorialRecursively(num - 1);
+  }
+};
+
+export { computeFactorial, computeFactorialRecursively };
