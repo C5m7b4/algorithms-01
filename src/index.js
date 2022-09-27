@@ -1,5 +1,5 @@
 console.log('you are ready to start coding...');
-
+import { expect } from './expect';
 const root = document.createElement('div');
 root.id = 'root';
 document.body.appendChild(root);
@@ -152,6 +152,26 @@ const data = [
 // // if we call this again, we wont have to do all the work
 // console.log(factorial(5));
 
-import { linearSearch, linearSearchObjArray } from './linearSearch';
-console.log(linearSearch([2, 6, 7, 90, 103], 90));
-console.log(linearSearchObjArray(emps, 'name', 'sam'));
+// import { linearSearch, linearSearchObjArray } from './linearSearch';
+// console.log(linearSearch([2, 6, 7, 90, 103], 90));
+// console.log(linearSearchObjArray(emps, 'name', 'sam'));
+
+import { binarySearch, binarySearchObjArr } from './binarySearch';
+// console.log(binarySearch([2, 6, 7, 90, 103], 90));
+// expect(binarySearch([2, 6, 7, 90, 103], 90)).toBe({ guess: 3, result: 90 });
+// console.log('searching by age');
+// console.log(binarySearchObjArr(emps, 'age', 4)); // 3 does not work though
+// console.log('searching by name');
+// console.log(binarySearchObjArr(emps, 'name', 'john')); // this will not work because they are not in order
+
+// now lets sort by age and all should work
+import { sort } from './sort';
+// let sortedEmps = sort(emps, 'age', true);
+// console.log(sortedEmps);
+// console.log('searching by age');
+
+// console.log(binarySearchObjArr(sortedEmps, 'age', 50));
+let sortedEmps = sort(emps, 'name', true);
+console.log(sortedEmps);
+console.log('searching by name');
+console.log(binarySearchObjArr(sortedEmps, 'name', 'john'));

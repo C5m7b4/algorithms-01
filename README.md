@@ -78,3 +78,7 @@ Now can memoize our factorial function
 ## branch 19
 
 Utilize a Linear search to find a number in an array of numbers and then also transform that Linear search to search through an array of objects. That seems more real-life to me.
+
+## branch 20
+
+Implement a Binary Search function. In order for Binary search to work the list must already be sorted. We can prove this out and then use our sorting function to sort our data and then use the binary search to get what we are after.
