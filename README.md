@@ -94,3 +94,7 @@ we added ascending and descending order to your bubble sort and created two iden
 ## branch 23
 
 Now we will build out a mergeSort algorithm just for numbers
+
+## branch 24
+
+Now let's modify our marge sort to handle arrays of objects bot ascending and descending
