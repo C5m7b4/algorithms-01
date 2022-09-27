@@ -1,3 +1,5 @@
+import { memoize } from './memoize';
+
 const computeFactorial = (num) => {
   let result = 1;
 
@@ -19,4 +21,12 @@ const computeFactorialRecursively = (num) => {
   }
 };
 
-export { computeFactorial, computeFactorialRecursively };
+const factorial = memoize((x) => {
+  if (x === 0) {
+    return 1;
+  } else {
+    return x + factorial(x - 1);
+  }
+});
+
+export { computeFactorial, computeFactorialRecursively, factorial };
