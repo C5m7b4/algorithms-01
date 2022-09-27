@@ -30,5 +30,9 @@ root.appendChild(main);
 // console.log(sort(sortedEmps, 'birthdate', false));
 
 import { memoTimes10 } from './memoize';
-console.log('calculated value', memoTimes10(9));
-console.log('cached value', memoTimes10(9));
+// console.log('calculated value', memoTimes10(9));
+// console.log('cached value', memoTimes10(9));
+
+const memoFn = memoTimes10();
+console.log(memoFn(9));
+console.log(memoFn(9));
