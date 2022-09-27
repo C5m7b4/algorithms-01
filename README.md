@@ -29,3 +29,8 @@ Let's take a look at caching function results / memoization to speed up reaccuri
 ## branch 7
 
 This approach uses a closure to capture our cache
+
+## branch 8
+
+Now that we've used a closure, let's look at what currying or partial application looks like.
+It's really the same concept, but we could have a generic curry function or we could just curry the function specific to our needs.
