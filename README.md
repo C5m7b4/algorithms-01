@@ -86,3 +86,7 @@ Implement a Binary Search function. In order for Binary search to work the list 
 ## branch 21
 
 Let's develop a bubble sort and an optimized bubble sort for arrays of numbers
+
+## branch 22
+
+we added ascending and descending order to your bubble sort and created two idential bubble sorts that are capable of sorting arrays of objects ascending and descending
