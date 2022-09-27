@@ -4,7 +4,7 @@ const sort = (arr, key, asc = true) => {
       console.log('sorting numbers');
       return asc ? a[key] - b[key] : b[key] - a[key];
     } else if (typeof a[key] === 'string') {
-      console.log('sorting strings');
+      // console.log('sorting strings');
       // detect if this is a date or not
 
       const sa = a[key].toLowerCase();
