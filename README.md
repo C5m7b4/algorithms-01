@@ -25,3 +25,7 @@ Now we need to take into consideration seperation of concerns. We should really 
 ## branch 6
 
 Let's take a look at caching function results / memoization to speed up reaccuring evaluations
+
+## branch 7
+
+This approach uses a closure to capture our cache
