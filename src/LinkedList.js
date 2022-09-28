@@ -5,15 +5,61 @@ class LinkedList {
     this._tail = undefined;
   }
 
+  debug() {
+    let curr = this._head;
+    let out = '';
+    for (let i = 0; curr && i < this._length; ++i) {
+      out += `${i} => ${curr.value} `;
+      curr = curr.next;
+    }
+
+    console.log(out);
+  }
+
+  prepend(item) {
+    this._length++;
+    const node = { value: item };
+    if (!this._head) {
+      this._head = this._tail = node;
+    }
+
+    node.next = this._head;
+    this._head.prev = node;
+    this._head = node;
+  }
+
+  insertAt(item, idx) {
+    if (idx > this._length) {
+      throw new Error('oh no, you cant do this mans');
+    }
+    if (idx === this._length) {
+      this.append(item);
+      return;
+    } else if (idx === 0) {
+      this.prepend(item);
+      return;
+    }
+    this._length++;
+
+    const curr = this.getAt(idx);
+    const node = { value: item };
+
+    node.next = curr;
+    node.prev = curr.prev;
+    curr.prev = node;
+    if (node.prev) {
+      node.prev.next = curr;
+    }
+  }
+
   append(item) {
     const node = { value: item };
 
     this._length++;
 
     if (!this._tail) {
-      node.prev = undefined;
-      node.next = undefined;
       this._head = this._head = this._tail = node;
+      //this.debug();
       return;
     }
 
@@ -22,6 +68,7 @@ class LinkedList {
 
     this._tail.next = node;
     this._tail = node;
+    //this.debug();
   }
 
   remove(item) {
