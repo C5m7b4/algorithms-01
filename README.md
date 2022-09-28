@@ -166,3 +166,9 @@ Add contains, size, and find to our Tree
 ## branch41
 
 refactor Tree methods and add insert and reorder
+
+## branch 42
+
+Now we are going to create a Binary Tree.
+Here is a good reference link:
+https://codesandbox.io/s/graphtreesbinarytrees-forked-pjucnu?file=/solutions/binarytrees.solutions.js

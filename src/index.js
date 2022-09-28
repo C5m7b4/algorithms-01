@@ -321,8 +321,11 @@ const r1 = abe.find(abe, 'lisa');
 // console.log(abe.contains('lisa'));
 // console.log(abe.contains('puppy'));
 // console.log(abe.size(abe));
-abe.insert(abe, 'puppy');
-console.log(abe);
+// abe.insert(abe, 'puppy');
+// console.log(abe);
 
-// import BinaryTree from './BinaryTree';
-// const myTree = new BinaryTree(1);
+import BinaryTree from './BinaryTree';
+const myTree = new BinaryTree(1);
+myTree.insertChild('child1');
+myTree.insertChild('secondChild');
+console.log(myTree);
