@@ -337,4 +337,5 @@ myTree.insertChild('fifth Child');
 //     child1                       secondChild
 // thirdChild - fourthChild       fifthChild
 console.log('the whole tree', myTree);
-myTree.preOrderTraversal();
+// myTree.preOrderTraversal();
+myTree.postOrderTraversal();
