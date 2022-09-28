@@ -162,3 +162,7 @@ Now we are going to start looking at trees. First we will create a normal tree w
 ## branch40
 
 Add contains, size, and find to our Tree
+
+## branch41
+
+refactor Tree methods and add insert and reorder
