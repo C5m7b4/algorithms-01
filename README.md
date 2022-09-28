@@ -154,3 +154,7 @@ Implement the remove, contains, isHead, and isTail methods
 ## branch 38
 
 Let's create a HashTable class
+
+## branch 39
+
+Now we are going to start looking at trees. First we will create a normal tree with insertChild, appendChild, remove, traverse
