@@ -134,3 +134,7 @@ Let's create a linked list and only implement the append method to this class
 ## branch 33
 
 Now let's expand on our LinkedList and add the remove feature to it.
+
+## branch 34
+
+Let's expand on our LinkedList and add prepend, debug, and insertAt methods
