@@ -172,3 +172,7 @@ refactor Tree methods and add insert and reorder
 Now we are going to create a Binary Tree.
 Here is a good reference link:
 https://codesandbox.io/s/graphtreesbinarytrees-forked-pjucnu?file=/solutions/binarytrees.solutions.js
+
+## branch 43
+
+There are three types of traversal, inOrderTraversal, preOrderTraversal, and postOrderTraversal. In this branch we are only going to implement and test the inOrderTraversal

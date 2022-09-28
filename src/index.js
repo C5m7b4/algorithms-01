@@ -303,20 +303,20 @@ const addTwenty = (x) => {
 // console.log('deleted', r2);
 // console.log(myHash);
 
-import Tree from './Tree';
-const abe = new Tree('abe');
-const homer = new Tree('homer');
-const bart = new Tree('bart');
-const lisa = new Tree('lisa');
-const maggie = new Tree('maggie');
+// import Tree from './Tree';
+// const abe = new Tree('abe');
+// const homer = new Tree('homer');
+// const bart = new Tree('bart');
+// const lisa = new Tree('lisa');
+// const maggie = new Tree('maggie');
 
-abe.children.push(homer);
-homer.children.push(bart, lisa, maggie);
-//abe.remove(abe, 'lisa');
-abe.traverse(abe);
-console.log(abe);
-console.log('searching for lisa');
-const r1 = abe.find(abe, 'lisa');
+// abe.children.push(homer);
+// homer.children.push(bart, lisa, maggie);
+// //abe.remove(abe, 'lisa');
+// abe.traverse(abe);
+// console.log(abe);
+// console.log('searching for lisa');
+// const r1 = abe.find(abe, 'lisa');
 // console.log(r1);
 // console.log(abe.contains('lisa'));
 // console.log(abe.contains('puppy'));
@@ -327,5 +327,13 @@ const r1 = abe.find(abe, 'lisa');
 import BinaryTree from './BinaryTree';
 const myTree = new BinaryTree(1);
 myTree.insertChild('child1');
-myTree.insertChild('secondChild');
-console.log(myTree);
+myTree.insertChild('second Child');
+myTree.insertChild('third child');
+myTree.insertChild('fourth Child');
+myTree.insertChild('fifth Child');
+// console.log(myTree);
+myTree.inOrderTraversal();
+//                  1
+//     child1                       secondChild
+// thirdChild - fourthChild       fifthChild
+console.log('the whole tree', myTree);
