@@ -280,13 +280,25 @@ const addTwenty = (x) => {
 // console.log(node);
 // console.log(myList);
 
-import SingleLinkedList from './SingleLinkedList';
-const myList = new SingleLinkedList(1);
+// import SingleLinkedList from './SingleLinkedList';
+// const myList = new SingleLinkedList(1);
 
-myList.insert(2);
-myList.insert(3);
-myList.insert(4);
-// myList.removeTail();
-myList.remove(3);
-console.log(myList);
-console.log(myList.contains(2));
+// myList.insert(2);
+// myList.insert(3);
+// myList.insert(4);
+// // myList.removeTail();
+// myList.remove(3);
+// console.log(myList);
+// console.log(myList.contains(2));
+
+import HashTable from './HashTable';
+const myHash = new HashTable();
+myHash.insert('a', 1);
+myHash.insert('b', { name: 'bergie', age: 20 });
+myHash.insert('c', 5);
+console.log(myHash);
+const r1 = myHash.retrieve('b');
+console.log(r1);
+const r2 = myHash.remove('b');
+console.log('deleted', r2);
+console.log(myHash);

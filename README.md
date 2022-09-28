@@ -150,3 +150,7 @@ Add a SingleLinkedList and implement insert and remove methods
 ## branch 37
 
 Implement the remove, contains, isHead, and isTail methods
+
+## branch 38
+
+Let's create a HashTable class
