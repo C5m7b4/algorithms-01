@@ -268,14 +268,22 @@ const addTwenty = (x) => {
 // const equation2 = addTwenty(r2.age);
 // console.log(equation2);
 
-import LinkedList from './LinkedList';
-const myList = new LinkedList();
-const item1 = { name: 'one', age: 1 };
-myList.append(item1);
-console.log(myList);
-const item2 = { name: 'two', age: 2 };
-myList.append(item2);
-console.log(myList);
-const node = myList.remove(item1);
-console.log(node);
+// import LinkedList from './LinkedList';
+// const myList = new LinkedList();
+// const item1 = { name: 'one', age: 1 };
+// myList.append(item1);
+// console.log(myList);
+// const item2 = { name: 'two', age: 2 };
+// myList.append(item2);
+// console.log(myList);
+// const node = myList.remove(item1);
+// console.log(node);
+// console.log(myList);
+
+import SingleLinkedList from './SingleLinkedList';
+const myList = new SingleLinkedList(1);
+
+myList.insert(2);
+myList.insert(3);
+myList.removeTail();
 console.log(myList);
