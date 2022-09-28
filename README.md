@@ -114,3 +114,8 @@ Now we will build a stack just like the one that is present in the execution run
 ## branch 28
 
 optimize our stack to be a little more helpfull with a stacktrace
+
+
+## branch 29
+
+optimize our stack a little more and see what it looks like to stack function call and then pop them off later to use in our code
