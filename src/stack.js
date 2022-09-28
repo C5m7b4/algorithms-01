@@ -1,3 +1,6 @@
+// a stack is LIFO Last in First Out
+// so the last one in is the first out that comes out
+
 class Stack {
   constructor() {
     this.head = undefined;
