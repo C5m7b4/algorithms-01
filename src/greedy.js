@@ -7,7 +7,7 @@
 // the least number of bills required for any given dollar amount
 // that is divisible by 5
 
-const makeChange = (coins, amount) => {
+const makeChange_ = (coins, amount) => {
   const coinArray = [];
   coins.sort((a, b) => b - a);
   let coinTotal = 0;
@@ -23,6 +23,27 @@ const makeChange = (coins, amount) => {
   }
 
   return { totalCoins: coinTotal, denominations: coinArray };
+};
+
+const cache = {};
+const coins = [10, 6, 1];
+
+const makeChange = (c) => {
+  if (cache[c]) return cache[c];
+
+  let minCoins = -1;
+
+  coins.forEach((coin) => {
+    if (c - coin > 0) {
+      let currMinCoins = makeChange(c - coin);
+      if (minCoins === -1 || currMinCoins < minCoins) {
+        minCoins = currMinCoins;
+      }
+    }
+  });
+
+  cache[c] = minCoins + 1;
+  return cache[c];
 };
 
 export { makeChange };
