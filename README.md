@@ -126,3 +126,7 @@ Now let's build up our own Queue system like the one that runs in the browser ja
 ## branch 31
 
 Now lets use our Queue system with the implementation of some functions
+
+## branch 32
+
+Let's create a linked list and only implement the append method to this class
