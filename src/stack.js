@@ -22,17 +22,20 @@ class Stack {
     this.head = node;
   }
 
+  // optimize this so that when we pop values off the stack
+  // we get something that we can actually use
   pop() {
     this.length = Math.max(0, this.length - 1);
     if (this.length === 0) {
       const head = this.head;
       this.head = undefined;
-      return head?.value;
+      this.stackTrace.pop();
+      return head;
     }
     this.stackTrace.pop();
     const head = this.head;
     this.head = head.prev;
-    return head.value;
+    return head;
   }
 
   peak() {

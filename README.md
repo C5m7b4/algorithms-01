@@ -110,3 +110,7 @@ Let's refacor your greedy function using recursion
 ## branch 27
 
 Now we will build a stack just like the one that is present in the execution runtime of your javascript code in the browser
+
+## branch 28
+
+optimize our stack to be a little more helpfull with a stacktrace
