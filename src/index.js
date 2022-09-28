@@ -208,5 +208,5 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // console.log(mergeSortObjArray(emps, 'age', false));
 
 import { makeChange } from './greedy';
-debugger;
-console.log(makeChange([5, 10, 25], 40));
+// console.log(makeChange([5, 10, 25], 40));
+console.log(makeChange(40));

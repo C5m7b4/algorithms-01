@@ -102,3 +102,7 @@ Now let's modify our marge sort to handle arrays of objects bot ascending and de
 ## branch 25
 
 This is just an example of a greedy algorithm that can bite you when the input is certain values, but works fine with other values
+
+## branch 26
+
+Let's refacor your greedy function using recursion
