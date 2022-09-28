@@ -285,5 +285,8 @@ const myList = new SingleLinkedList(1);
 
 myList.insert(2);
 myList.insert(3);
-myList.removeTail();
+myList.insert(4);
+// myList.removeTail();
+myList.remove(3);
 console.log(myList);
+console.log(myList.contains(2));

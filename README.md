@@ -146,3 +146,7 @@ Add the implementation for get to our Linked List as well as a removeAt method
 ## branch 36
 
 Add a SingleLinkedList and implement insert and remove methods
+
+## branch 37
+
+Implement the remove, contains, isHead, and isTail methods
