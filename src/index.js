@@ -204,6 +204,9 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // const list = [2, 9, 3, 6];
 // console.log(mergeSort(list, false));
 
-import { mergeSortObjArray } from './mergeSortOjbArray';
+// import { mergeSortObjArray } from './mergeSortOjbArray';
+// console.log(mergeSortObjArray(emps, 'age', false));
+
+import { makeChange } from './greedy';
 debugger;
-console.log(mergeSortObjArray(emps, 'age', false));
+console.log(makeChange([5, 10, 25], 40));

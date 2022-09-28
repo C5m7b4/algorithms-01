@@ -98,3 +98,7 @@ Now we will build out a mergeSort algorithm just for numbers
 ## branch 24
 
 Now let's modify our marge sort to handle arrays of objects bot ascending and descending
+
+## branch 25
+
+This is just an example of a greedy algorithm that can bite you when the input is certain values, but works fine with other values
