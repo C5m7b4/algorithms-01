@@ -332,8 +332,9 @@ myTree.insertChild('third child');
 myTree.insertChild('fourth Child');
 myTree.insertChild('fifth Child');
 // console.log(myTree);
-myTree.inOrderTraversal();
+// myTree.inOrderTraversal();
 //                  1
 //     child1                       secondChild
 // thirdChild - fourthChild       fifthChild
 console.log('the whole tree', myTree);
+myTree.preOrderTraversal();

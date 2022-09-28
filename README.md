@@ -176,3 +176,6 @@ https://codesandbox.io/s/graphtreesbinarytrees-forked-pjucnu?file=/solutions/bin
 ## branch 43
 
 There are three types of traversal, inOrderTraversal, preOrderTraversal, and postOrderTraversal. In this branch we are only going to implement and test the inOrderTraversal
+
+## branch 44
+Now we are going to see how preOrderTraversal outputs the trees inside of our tree
