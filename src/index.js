@@ -207,6 +207,18 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // import { mergeSortObjArray } from './mergeSortOjbArray';
 // console.log(mergeSortObjArray(emps, 'age', false));
 
-import { makeChange } from './greedy';
-// console.log(makeChange([5, 10, 25], 40));
-console.log(makeChange(40));
+// import { makeChange } from './greedy';
+// // console.log(makeChange([5, 10, 25], 40));
+// console.log(makeChange(40));
+
+import Stack from './stack';
+const myStack = new Stack();
+console.log(myStack);
+myStack.push({ name: 'timmy', age: 24 });
+console.log(myStack);
+myStack.push({ name: 'jenny', age: 29 });
+console.log(myStack);
+myStack.push({ name: 'jericho', age: 14 });
+console.log(myStack);
+myStack.pop();
+console.log(myStack);
