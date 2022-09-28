@@ -138,3 +138,7 @@ Now let's expand on our LinkedList and add the remove feature to it.
 ## branch 34
 
 Let's expand on our LinkedList and add prepend, debug, and insertAt methods
+
+## branch 35
+
+Add the implementation for get to our Linked List as well as a removeAt method

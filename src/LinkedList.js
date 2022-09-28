@@ -87,7 +87,18 @@ class LinkedList {
     return this.removeNode(curr);
   }
 
-  get(idx) {}
+  get(idx) {
+    return this.getAt(idx).value;
+  }
+
+  removeAt(idx) {
+    const node = this.getAt(idx);
+    if (!node) {
+      return undefined;
+    }
+
+    return this.removeNode(node);
+  }
 
   getAt(idx) {
     let curr = this._head;
