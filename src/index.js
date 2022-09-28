@@ -270,7 +270,12 @@ const addTwenty = (x) => {
 
 import LinkedList from './LinkedList';
 const myList = new LinkedList();
-myList.append({ name: 'one', age: 1 });
+const item1 = { name: 'one', age: 1 };
+myList.append(item1);
 console.log(myList);
-myList.append({ name: 'two', age: 2 });
+const item2 = { name: 'two', age: 2 };
+myList.append(item2);
+console.log(myList);
+const node = myList.remove(item1);
+console.log(node);
 console.log(myList);

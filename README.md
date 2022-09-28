@@ -130,3 +130,7 @@ Now lets use our Queue system with the implementation of some functions
 ## branch 32
 
 Let's create a linked list and only implement the append method to this class
+
+## branch 33
+
+Now let's expand on our LinkedList and add the remove feature to it.
