@@ -211,9 +211,9 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // // console.log(makeChange([5, 10, 25], 40));
 // console.log(makeChange(40));
 
-import Stack from './stack';
-const myStack = new Stack();
-console.log(myStack);
+// import Stack from './stack';
+// const myStack = new Stack();
+// console.log(myStack);
 // myStack.push({ name: 'timmy', age: 24 });
 // console.log(myStack);
 // myStack.push({ name: 'jenny', age: 29 });
@@ -239,13 +239,25 @@ const addTwenty = (x) => {
   return x + 20;
 };
 
-myStack.push(addTen);
-console.log(myStack);
-myStack.push(addTwenty);
-console.log(myStack);
-const func1 = myStack.pop();
+// myStack.push(addTen);
+// console.log(myStack);
+// myStack.push(addTwenty);
+// console.log(myStack);
+// const func1 = myStack.pop();
 
-console.log(func1(10));
+// console.log(func1(10));
 
-const func2 = myStack.pop();
-console.log(func2(10));
+// const func2 = myStack.pop();
+// console.log(func2(10));
+
+import Queue from './queue';
+const myQueue = new Queue();
+myQueue.enqueue({ name: 'one', age: 1 });
+myQueue.enqueue({ name: 'two', age: 2 });
+myQueue.enqueue({ name: 'three', age: 3 });
+console.log(myQueue);
+const r1 = myQueue.dequeue();
+console.log(r1);
+console.log(myQueue);
+const peek = myQueue.peek();
+console.log(peek);
