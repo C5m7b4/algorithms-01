@@ -291,14 +291,27 @@ const addTwenty = (x) => {
 // console.log(myList);
 // console.log(myList.contains(2));
 
-import HashTable from './HashTable';
-const myHash = new HashTable();
-myHash.insert('a', 1);
-myHash.insert('b', { name: 'bergie', age: 20 });
-myHash.insert('c', 5);
-console.log(myHash);
-const r1 = myHash.retrieve('b');
-console.log(r1);
-const r2 = myHash.remove('b');
-console.log('deleted', r2);
-console.log(myHash);
+// import HashTable from './HashTable';
+// const myHash = new HashTable();
+// myHash.insert('a', 1);
+// myHash.insert('b', { name: 'bergie', age: 20 });
+// myHash.insert('c', 5);
+// console.log(myHash);
+// const r1 = myHash.retrieve('b');
+// console.log(r1);
+// const r2 = myHash.remove('b');
+// console.log('deleted', r2);
+// console.log(myHash);
+
+import Tree from './Tree';
+const abe = new Tree('abe');
+const homer = new Tree('homer');
+const bart = new Tree('bart');
+const lisa = new Tree('lisa');
+const maggie = new Tree('maggie');
+
+abe.children.push(homer);
+homer.children.push(bart, lisa, maggie);
+abe.remove(abe, 'lisa');
+abe.traverse(abe);
+console.log(abe);
