@@ -106,3 +106,7 @@ This is just an example of a greedy algorithm that can bite you when the input i
 ## branch 26
 
 Let's refacor your greedy function using recursion
+
+## branch 27
+
+Now we will build a stack just like the one that is present in the execution runtime of your javascript code in the browser
