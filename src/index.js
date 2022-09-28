@@ -214,19 +214,38 @@ const arrayReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 import Stack from './stack';
 const myStack = new Stack();
 console.log(myStack);
-myStack.push({ name: 'timmy', age: 24 });
+// myStack.push({ name: 'timmy', age: 24 });
+// console.log(myStack);
+// myStack.push({ name: 'jenny', age: 29 });
+// console.log(myStack);
+// myStack.push({ name: 'jericho', age: 14 });
+// console.log(myStack);
+// let lastValue = myStack.pop();
+// console.log(myStack);
+// console.log('lastValue', lastValue);
+// lastValue = myStack.pop();
+// console.log(myStack);
+// console.log('lastValue', lastValue);
+// lastValue = myStack.pop();
+// console.log(myStack);
+// console.log('lastValue', lastValue);
+// console.log(myStack);
+
+const addTen = (x) => {
+  return x + 10;
+};
+
+const addTwenty = (x) => {
+  return x + 20;
+};
+
+myStack.push(addTen);
 console.log(myStack);
-myStack.push({ name: 'jenny', age: 29 });
+myStack.push(addTwenty);
 console.log(myStack);
-myStack.push({ name: 'jericho', age: 14 });
-console.log(myStack);
-let lastValue = myStack.pop();
-console.log(myStack);
-console.log('lastValue', lastValue);
-lastValue = myStack.pop();
-console.log(myStack);
-console.log('lastValue', lastValue);
-lastValue = myStack.pop();
-console.log(myStack);
-console.log('lastValue', lastValue);
-console.log(myStack);
+const func1 = myStack.pop();
+
+console.log(func1(10));
+
+const func2 = myStack.pop();
+console.log(func2(10));
