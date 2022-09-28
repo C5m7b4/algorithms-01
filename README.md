@@ -158,3 +158,7 @@ Let's create a HashTable class
 ## branch 39
 
 Now we are going to start looking at trees. First we will create a normal tree with insertChild, appendChild, remove, traverse
+
+## branch40
+
+Add contains, size, and find to our Tree

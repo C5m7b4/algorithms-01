@@ -312,6 +312,12 @@ const maggie = new Tree('maggie');
 
 abe.children.push(homer);
 homer.children.push(bart, lisa, maggie);
-abe.remove(abe, 'lisa');
+//abe.remove(abe, 'lisa');
 abe.traverse(abe);
 console.log(abe);
+console.log('searching for lisa');
+const r1 = abe.find('lisa');
+console.log(r1);
+console.log(abe.contains('lisa'));
+console.log(abe.contains('puppy'));
+console.log(abe.size(abe));
