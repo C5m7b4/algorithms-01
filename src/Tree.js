@@ -14,93 +14,65 @@ class Tree {
   }
 
   remove(tree, value) {
-    for (let i = 0; i < tree.children.length; i++) {
-      const childNode = tree.children[i];
-      if (childNode.value === value) {
-        tree.children.splice(i, 1);
-        return true;
-      }
-      if (childNode.children.length > 0) {
-        this.remove(childNode, value);
-      }
-    }
-    return false;
-  }
-
-  traverse(tree, isChild = false) {
-    console.log(tree.value);
-    tree.children.forEach((child) => {
-      if (isChild) console.log(child.value);
-      if (child.children.length > 0) {
-        this.traverse(child, true);
-      }
-    });
-  }
-
-  contains(value) {
     if (this.value === value) {
-      return true;
+      delete this;
     }
-    for (let i = 0; i < this.children.length; i++) {
-      const childNode = this.children[i];
-      if (childNode.value === value) {
-        return true;
-      }
-      const result = this._search(childNode, value);
-      if (result) {
-        return true;
-      }
-    }
-    return false;
-  }
-
-  _sizeWalk(tree) {
-    let count = 0;
-    tree.children.forEach((child) => {
-      if (child.children.length > 0) {
-        this._sizeWalk(child);
+    this.children.forEach((child, index) => {
+      if (child.value === value) {
+        this.children.splice(index, 1);
+      } else {
+        child.remove(value);
       }
     });
-    return count;
+  }
+
+  traverse(tree, func = console.log) {
+    func(tree);
+    tree.children.forEach((child) => {
+      this.traverse(child, func);
+    });
+  }
+
+  contains(searchValue) {
+    let result = false;
+    this.traverse(this, (leaf) => {
+      result = result || leaf.value === searchValue;
+    });
+    return result;
   }
 
   size(tree) {
-    let treeSize = 1;
-    tree.children.forEach((child) => {
-      treeSize += child.children.length + 1;
-      if (child.children.length > 0) {
-        treeSize += this._sizeWalk(child);
+    let size = 0;
+    this.traverse(tree, () => {
+      size++;
+    });
+    return size;
+  }
+
+  find(tree, value) {
+    let result = false;
+    this.traverse(tree, (leaf) => {
+      if (leaf.value === value) {
+        result = leaf;
       }
     });
-    return treeSize;
+    return result;
   }
 
-  _search(tree, value) {
-    for (let i = 0; i < tree.children.length; i++) {
-      const childNode = tree.children[i];
-      if (childNode.value === value) {
-        return childNode;
-      }
+  insert(parentTree, value) {
+    let leaf = this.find(this, parentTree.value);
+    if (leaf) {
+      leaf.insertChild(value);
     }
+    return leaf;
   }
 
-  find(value) {
-    if (this.value === value) {
-      return this;
-    }
-    for (let i = 0; i < this.children.length; i++) {
-      const childNode = this.children[i];
-      if (childNode.value === value) {
-        return childNode;
-      }
-      const result = this._search(childNode, value);
-      return result;
-    }
+  reorder(node1, node2) {
+    const leaf1 = this.find(this, node1);
+    const leaf2 = this.find(this, node2);
+    leaf1.value = node2;
+    leaf2.value = node1;
   }
-
-  insert() {}
-
-  reorder(node1, node2) {}
 }
 
 export default Tree;

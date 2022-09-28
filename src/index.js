@@ -316,8 +316,13 @@ homer.children.push(bart, lisa, maggie);
 abe.traverse(abe);
 console.log(abe);
 console.log('searching for lisa');
-const r1 = abe.find('lisa');
-console.log(r1);
-console.log(abe.contains('lisa'));
-console.log(abe.contains('puppy'));
-console.log(abe.size(abe));
+const r1 = abe.find(abe, 'lisa');
+// console.log(r1);
+// console.log(abe.contains('lisa'));
+// console.log(abe.contains('puppy'));
+// console.log(abe.size(abe));
+abe.insert(abe, 'puppy');
+console.log(abe);
+
+// import BinaryTree from './BinaryTree';
+// const myTree = new BinaryTree(1);
