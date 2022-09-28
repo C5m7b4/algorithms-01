@@ -27,7 +27,16 @@ class BinaryTree {
     return newBinaryTree;
   }
 
-  traverse() {}
+  // left, root, right
+  inOrderTraversal(func = console.log) {
+    if (this.left) {
+      this.left.inOrderTraversal(func);
+    }
+    func(this);
+    if (this.right) {
+      this.right.inOrderTraversal(func);
+    }
+  }
 
   contains(value) {}
 }
