@@ -122,3 +122,7 @@ optimize our stack a little more and see what it looks like to stack function ca
 ## branch 30
 
 Now let's build up our own Queue system like the one that runs in the browser javascript execution context
+
+## branch 31
+
+Now lets use our Queue system with the implementation of some functions
