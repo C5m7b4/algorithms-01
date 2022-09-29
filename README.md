@@ -192,3 +192,7 @@ Now let's take our BinaryTree and turn it into a BinarySearchTree. One of the pr
 ## branch 47
 
 Let's add contains, min, and max to our BST
+
+## branch 48
+
+add remove functionality to our BST

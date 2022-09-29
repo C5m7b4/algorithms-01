@@ -354,3 +354,5 @@ console.log(myTree);
 console.log(myTree.contains(7));
 console.log(myTree.min(myTree.root));
 console.log(myTree.max(myTree.root));
+myTree.remove(2);
+console.log(myTree);
