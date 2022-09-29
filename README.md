@@ -184,3 +184,7 @@ Now we are going to see how preOrderTraversal outputs the trees inside of our tr
 ## branch 45
 
 Now we are going to see how postOrderTraversal outputs the trees inside of our tree
+
+## branch 46
+
+Now let's take our BinaryTree and turn it into a BinarySearchTree. One of the properties of a binary search tree is that if the child node is less than the parent node, then the child must go on the left and if it is bigger then is must go to the right.

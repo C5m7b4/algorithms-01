@@ -59,8 +59,6 @@ class BinaryTree {
     }
     func(this);
   }
-
-  contains(value) {}
 }
 
 export default BinaryTree;

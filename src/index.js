@@ -324,18 +324,30 @@ const addTwenty = (x) => {
 // abe.insert(abe, 'puppy');
 // console.log(abe);
 
-import BinaryTree from './BinaryTree';
-const myTree = new BinaryTree(1);
-myTree.insertChild('child1');
-myTree.insertChild('second Child');
-myTree.insertChild('third child');
-myTree.insertChild('fourth Child');
-myTree.insertChild('fifth Child');
+// import BinaryTree from './BinaryTree';
+// const myTree = new BinaryTree(1);
+// myTree.insertChild('child1');
+// myTree.insertChild('second Child');
+// myTree.insertChild('third child');
+// myTree.insertChild('fourth Child');
+// myTree.insertChild('fifth Child');
 // console.log(myTree);
 // myTree.inOrderTraversal();
 //                  1
 //     child1                       secondChild
-// thirdChild - fourthChild       fifthChild
-console.log('the whole tree', myTree);
+// // thirdChild - fourthChild       fifthChild
+// console.log('the whole tree', myTree);
 // myTree.preOrderTraversal();
-myTree.postOrderTraversal();
+// myTree.postOrderTraversal();
+// console.log(myTree.contains('second Child'));
+
+import BinarySearchTree from './BinarySearchTree';
+const myTree = new BinarySearchTree();
+myTree.insert(10);
+myTree.insert(5);
+myTree.insert(15);
+myTree.insert(4);
+myTree.insert(2);
+myTree.insert(3);
+
+console.log(myTree);
