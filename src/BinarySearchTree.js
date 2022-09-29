@@ -116,6 +116,51 @@ class BinarySearchTree {
 
     this.root = removeHelper.call(this, this.root, value);
   }
+
+  // left, root, right
+  inOrderTraversal(node, func = console.log) {
+    if (node === null) {
+      return false;
+    }
+
+    if (node.left !== null) {
+      this.inOrderTraversal(node.left, func);
+    }
+
+    func(node);
+
+    if (node.right !== null) {
+      this.inOrderTraversal(node.right, func);
+    }
+  }
+
+  // root, left, right
+  preOrderTraversal(node, func = console.log) {
+    if (node === null) {
+      return false;
+    }
+    func(node);
+    if (node.left !== null) {
+      this.preOrderTraversal(node.left, func);
+    }
+    if (node.right !== null) {
+      this.preOrderTraversal(node.right, func);
+    }
+  }
+
+  // left, right, root
+  postOrderTraversal(node, func = console.log) {
+    if (node === null) {
+      return false;
+    }
+    if (node.left !== null) {
+      this.postOrderTraversal(node.left, func);
+    }
+    if (node.right !== null) {
+      this.postOrderTraversal(node.right, func);
+    }
+    func(node);
+  }
 }
 
 export default BinarySearchTree;

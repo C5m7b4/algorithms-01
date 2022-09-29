@@ -196,3 +196,7 @@ Let's add contains, min, and max to our BST
 ## branch 48
 
 add remove functionality to our BST
+
+## branch 49
+
+add traversals and test them out
