@@ -351,3 +351,6 @@ myTree.insert(2);
 myTree.insert(3);
 
 console.log(myTree);
+console.log(myTree.contains(7));
+console.log(myTree.min(myTree.root));
+console.log(myTree.max(myTree.root));

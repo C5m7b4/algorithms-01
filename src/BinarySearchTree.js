@@ -37,6 +37,48 @@ class BinarySearchTree {
 
     return insertHelper.call(this, this.root, value);
   }
+
+  contains(value) {
+    function containsHelper(node, value) {
+      if (node === null) {
+        return false;
+      }
+
+      if (node.value === value) {
+        return true;
+      } else if (value < node.value && node.left !== null) {
+        return containsHelper(node.left, value);
+      } else if (value > node.value && node.right !== null) {
+        return containsHelper(node.right, value);
+      }
+      return false;
+    }
+    return containsHelper.call(this, this.root, value);
+  }
+
+  min(node = null) {
+    if (node === null) {
+      return;
+    }
+
+    if (node.left === null) {
+      return node;
+    } else {
+      return this.min(node.left);
+    }
+  }
+
+  max(node) {
+    debugger;
+    if (node === null) {
+      return null;
+    }
+    if (node.right === null) {
+      return node;
+    } else {
+      return this.max(node.right);
+    }
+  }
 }
 
 export default BinarySearchTree;
