@@ -341,21 +341,86 @@ const addTwenty = (x) => {
 // myTree.postOrderTraversal();
 // console.log(myTree.contains('second Child'));
 
-import BinarySearchTree from './BinarySearchTree';
-const myTree = new BinarySearchTree();
-myTree.insert(10);
-myTree.insert(5);
-myTree.insert(15);
-myTree.insert(4);
-myTree.insert(2);
-myTree.insert(3);
+// import BinarySearchTree from './BinarySearchTree';
+// const myTree = new BinarySearchTree();
+// myTree.insert(10);
+// myTree.insert(5);
+// myTree.insert(15);
+// myTree.insert(4);
+// myTree.insert(2);
+// myTree.insert(3);
 
-console.log(myTree);
-console.log(myTree.contains(7));
-console.log(myTree.min(myTree.root));
-console.log(myTree.max(myTree.root));
+// console.log(myTree);
+// console.log(myTree.contains(7));
+// console.log(myTree.min(myTree.root));
+// console.log(myTree.max(myTree.root));
 //myTree.remove(2);
 //console.log(myTree);
 // myTree.inOrderTraversal(myTree.root);
 // myTree.preOrderTraversal(myTree.root);
-myTree.postOrderTraversal(myTree.root);
+// myTree.postOrderTraversal(myTree.root);
+
+// create a graph that looks like this
+import AdjacencyGraph from './AdjacencyGraph';
+const myGraph = new AdjacencyGraph();
+myGraph.addVertex(1);
+myGraph.addVertex(2);
+myGraph.addVertex(3);
+myGraph.addVertex(4);
+myGraph.addVertex(5);
+myGraph.addVertex(6);
+myGraph.addVertex(7);
+
+// connect 1 to 2
+myGraph.addEdge(1, 2);
+// connect 1 to 4
+myGraph.addEdge(1, 4);
+// connect 2 to 3
+myGraph.addEdge(2, 3);
+// connect 4 to 3
+myGraph.addEdge(4, 3);
+// connect 3 to 5
+myGraph.addEdge(3, 5);
+// connect 5 to 6
+myGraph.addEdge(5, 6);
+// connect 5 to 7
+myGraph.addEdge(5, 7);
+
+console.log(myGraph);
+
+import AdjacencyGraphObj from './AdjacencyGraphObj';
+const myAdj = new AdjacencyGraphObj();
+const p1 = { id: 1, name: 'sally', age: 25 };
+const p2 = { id: 2, name: 'bily', age: 27 };
+const p3 = { id: 3, name: 'timmy', age: 17 };
+const p4 = { id: 4, name: 'bertha', age: 19 };
+const p5 = { id: 5, name: 'alex', age: 26 };
+const p6 = { id: 6, name: 'terry', age: 21 };
+const p7 = { id: 7, name: 'beth', age: 22 };
+
+myAdj.addVertex(p1.id);
+myAdj.addVertex(p2.id);
+myAdj.addVertex(p3.id);
+
+// connect p1 to p2
+myAdj.addEdge(p1, p2);
+// connect p1 to p4
+myAdj.addEdge(p1, p4);
+//connect p2 to p3
+myAdj.addEdge(p2, p3);
+// connect p4 to p3
+myAdj.addEdge(p4, p3);
+// connect p3 to p5
+myAdj.addEdge(p3, p5);
+// connect p5 to p7
+myAdj.addEdge(p5, p7);
+// connectc p5 to p6
+myAdj.addEdge(p5, p6);
+
+// disconnect 5 from 6
+// myAdj.removeEdge(p5, p6, true);
+// myAdj.removeVertex(p6, true);
+// myAdj.removeEdge(p5.id, p6.id);
+myAdj.removeVertex(p6.id);
+
+console.log(myAdj);
