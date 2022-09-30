@@ -362,40 +362,40 @@ const addTwenty = (x) => {
 
 // create a graph that looks like this
 import AdjacencyGraph from './AdjacencyGraph';
-const myGraph = new AdjacencyGraph();
-myGraph.addVertex(1);
-myGraph.addVertex(2);
-myGraph.addVertex(3);
-myGraph.addVertex(4);
-myGraph.addVertex(5);
-myGraph.addVertex(6);
-myGraph.addVertex(7);
+// const myGraph = new AdjacencyGraph();
+// myGraph.addVertex(1);
+// myGraph.addVertex(2);
+// myGraph.addVertex(3);
+// myGraph.addVertex(4);
+// myGraph.addVertex(5);
+// myGraph.addVertex(6);
+// myGraph.addVertex(7);
 
-// connect 1 to 2
-myGraph.addEdge(1, 2);
-// connect 1 to 4
-myGraph.addEdge(1, 4);
-// connect 2 to 3
-myGraph.addEdge(2, 3);
-// connect 4 to 3
-myGraph.addEdge(4, 3);
-// connect 3 to 5
-myGraph.addEdge(3, 5);
-// connect 5 to 6
-myGraph.addEdge(5, 6);
-// connect 5 to 7
-myGraph.addEdge(5, 7);
+// // connect 1 to 2
+// myGraph.addEdge(1, 2);
+// // connect 1 to 4
+// myGraph.addEdge(1, 4);
+// // connect 2 to 3
+// myGraph.addEdge(2, 3);
+// // connect 4 to 3
+// myGraph.addEdge(4, 3);
+// // connect 3 to 5
+// myGraph.addEdge(3, 5);
+// // connect 5 to 6
+// myGraph.addEdge(5, 6);
+// // connect 5 to 7
+// myGraph.addEdge(5, 7);
 
-console.log(myGraph);
+// console.log(myGraph);
 
-const bfsResult1 = myGraph.bfs(1);
-console.log(bfsResult1);
-const bfsResult2 = myGraph.bfs(4);
-console.log(bfsResult2);
-const dfs1 = myGraph.dfs(1);
-console.log(dfs1);
-const dfs2 = myGraph.dfs(4);
-console.log(dfs2);
+// const bfsResult1 = myGraph.bfs(1);
+// console.log(bfsResult1);
+// const bfsResult2 = myGraph.bfs(4);
+// console.log(bfsResult2);
+// const dfs1 = myGraph.dfs(1);
+// console.log(dfs1);
+// const dfs2 = myGraph.dfs(4);
+// console.log(dfs2);
 
 // import AdjacencyGraphObj from './AdjacencyGraphObj';
 // const myAdj = new AdjacencyGraphObj();
@@ -433,3 +433,29 @@ console.log(dfs2);
 // myAdj.removeVertex(p6.id);
 
 // console.log(myAdj);
+
+const myGraph = new AdjacencyGraph();
+myGraph.addVertex(1);
+myGraph.addVertex(2);
+myGraph.addVertex(3);
+myGraph.addVertex(4);
+myGraph.addVertex(5);
+myGraph.addVertex(6);
+myGraph.addVertex(7);
+myGraph.addVertex(8);
+myGraph.addVertex(9);
+
+myGraph.addEdge(1, 2);
+myGraph.addEdge(2, 5);
+myGraph.addEdge(5, 9);
+myGraph.addEdge(1, 3);
+myGraph.addEdge(3, 6);
+myGraph.addEdge(3, 7);
+myGraph.addEdge(1, 4);
+myGraph.addEdge(4, 8);
+
+console.log(myGraph);
+const bfs = myGraph.bfs(1);
+console.log(bfs);
+// const dfs = myGraph.dfs(1);
+// console.log(dfs);
