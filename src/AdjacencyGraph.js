@@ -1,3 +1,5 @@
+// reference helper: https://www.freecodecamp.org/news/8-essential-graph-algorithms-in-javascript/
+
 class AdjacencyGraph {
   constructor() {
     this.adjacencyList = {}; // adjacencies, items that are adjacent
