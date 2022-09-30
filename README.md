@@ -265,3 +265,26 @@ Now if we do a DepthFirstSearch the outcome should look like this:
 If we now run a BreadthFirstSearch the outcome should look like this:
 
 ![Alt text](images/bfsOnMyAdjacencyGraph.png?raw=true "bfsOutput")
+
+## branch 53
+
+Now let's modify these two search algorithms to handle arrays of object and let's take a looksee and see what this is going to look like for us in the real world. This is the true challenge.
+
+So let's build this tree into an AdjacencyGraph:
+
+![Alt text](images/AdjacencyGraphObjArr.png?raw=true "adjacencyObjArr")
+
+So, here is what that looks like in the chrome developer tools:
+
+![Alt text](images/AdjacencyGraphObjOutput.png?raw=true "adjacencyOutput")
+
+Now, you can see that everything points to where it should point to. So, after we convert our dfs and bfs, we should be able to get the same output that we got when using just numbers.
+First we are going to look at DepthFirstSearch and make sure that it evaluates correclty, and it does. Here is our output:
+
+![Alt text](images/dfsOnMyAdjacentObjArrGraph.png?raw=true "dfsOutput")
+
+Now that we have altered our BreadthFirstSearch we should have these results:
+
+![Alt Text](images/bfsObjArrOnMyAdjacencyGraph.png?raw=true "bfsOutput")
+
+There you have it, we have done it!! congrats.

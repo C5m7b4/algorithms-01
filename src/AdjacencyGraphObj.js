@@ -1,3 +1,5 @@
+import { DepthFirstSearchObjArr } from './DepthFirstSearchObjArr';
+import { BreadthFirstSearchObjArr } from './BreadthFirstSearchObjArr';
 class AdjacencyGraphObj {
   constructor() {
     this.adjacencyList = {};
@@ -57,5 +59,7 @@ class AdjacencyGraphObj {
     }
   }
 }
+AdjacencyGraphObj.prototype.dfs = DepthFirstSearchObjArr;
+AdjacencyGraphObj.prototype.bfs = BreadthFirstSearchObjArr;
 
 export default AdjacencyGraphObj;

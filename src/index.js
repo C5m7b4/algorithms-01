@@ -434,28 +434,65 @@ import AdjacencyGraph from './AdjacencyGraph';
 
 // console.log(myAdj);
 
-const myGraph = new AdjacencyGraph();
-myGraph.addVertex(1);
-myGraph.addVertex(2);
-myGraph.addVertex(3);
-myGraph.addVertex(4);
-myGraph.addVertex(5);
-myGraph.addVertex(6);
-myGraph.addVertex(7);
-myGraph.addVertex(8);
-myGraph.addVertex(9);
+// const myGraph = new AdjacencyGraph();
+// myGraph.addVertex(1);
+// myGraph.addVertex(2);
+// myGraph.addVertex(3);
+// myGraph.addVertex(4);
+// myGraph.addVertex(5);
+// myGraph.addVertex(6);
+// myGraph.addVertex(7);
+// myGraph.addVertex(8);
+// myGraph.addVertex(9);
 
-myGraph.addEdge(1, 2);
-myGraph.addEdge(2, 5);
-myGraph.addEdge(5, 9);
-myGraph.addEdge(1, 3);
-myGraph.addEdge(3, 6);
-myGraph.addEdge(3, 7);
-myGraph.addEdge(1, 4);
-myGraph.addEdge(4, 8);
+// myGraph.addEdge(1, 2);
+// myGraph.addEdge(2, 5);
+// myGraph.addEdge(5, 9);
+// myGraph.addEdge(1, 3);
+// myGraph.addEdge(3, 6);
+// myGraph.addEdge(3, 7);
+// myGraph.addEdge(1, 4);
+// myGraph.addEdge(4, 8);
 
-console.log(myGraph);
-const bfs = myGraph.bfs(1);
-console.log(bfs);
+// console.log(myGraph);
+// const bfs = myGraph.bfs(1);
+// console.log(bfs);
 // const dfs = myGraph.dfs(1);
 // console.log(dfs);
+
+const p1 = { id: 1, name: 'sam', age: 23 };
+const p2 = { id: 2, name: 'mark', age: 27 };
+const p3 = { id: 3, name: 'tyler', age: 18 };
+const p4 = { id: 4, name: 'kat', age: 25 };
+const p5 = { id: 5, name: 'kim', age: 28 };
+const p6 = { id: 6, name: 'kara', age: 21 };
+const p7 = { id: 7, name: 'mark', age: 29 };
+const p8 = { id: 8, name: 'tim', age: 32 };
+const p9 = { id: 9, name: 'nate', age: 22 };
+
+import AdjacencyGraphObj from './AdjacencyGraphObj';
+const myGraph = new AdjacencyGraphObj();
+myGraph.addVertex(p1);
+myGraph.addVertex(p2);
+myGraph.addVertex(p3);
+myGraph.addVertex(p4);
+myGraph.addVertex(p5);
+myGraph.addVertex(p6);
+myGraph.addVertex(p7);
+myGraph.addVertex(p8);
+myGraph.addVertex(p9);
+
+myGraph.addEdge(p1, p2);
+myGraph.addEdge(p2, p5);
+myGraph.addEdge(p5, p9);
+myGraph.addEdge(p1, p3);
+myGraph.addEdge(p3, p6);
+myGraph.addEdge(p3, p7);
+myGraph.addEdge(p1, p4);
+myGraph.addEdge(p4, p8);
+
+console.log(myGraph);
+// const dfs = myGraph.dfs(p1);
+// console.log(dfs);
+const bfs = myGraph.bfs(p1);
+console.log(bfs);
