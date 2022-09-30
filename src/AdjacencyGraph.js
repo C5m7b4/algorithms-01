@@ -1,5 +1,6 @@
 // reference helper: https://www.freecodecamp.org/news/8-essential-graph-algorithms-in-javascript/
-
+import { BreadthFirstSearch } from './BreadthFirstSearch';
+import { DepthFirstSearch } from './DepthFirstSearch';
 class AdjacencyGraph {
   constructor() {
     this.adjacencyList = {}; // adjacencies, items that are adjacent
@@ -39,5 +40,8 @@ class AdjacencyGraph {
     delete this.adjacencyList[v];
   }
 }
+
+AdjacencyGraph.prototype.bfs = BreadthFirstSearch;
+AdjacencyGraph.prototype.dfs = DepthFirstSearch;
 
 export default AdjacencyGraph;
