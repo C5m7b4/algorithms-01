@@ -247,3 +247,21 @@ function DFS
          - Push vertex to stack
    Return result array
 ```
+
+## branch 52
+
+We have now modified our DepthFirstSearch to work correctly choosing the left side of the node first always so if we have this graphed tree:
+
+![Alt text](images/myGraph.png?raw=true "myGraph")
+
+Once we build the AdjacentGraphs, our chrome debug tools should look like this:
+
+![Alt text](images/AdjacencyGraphDebugView.png?raw=true "chromedebugger")
+
+Now if we do a DepthFirstSearch the outcome should look like this:
+
+![Alt text](images/dfsOnMyAdjacencyGraph.png?raw=true "dfsOuput")
+
+If we now run a BreadthFirstSearch the outcome should look like this:
+
+![Alt text](images/bfsOnMyAdjacencyGraph.png?raw=true "bfsOutput")
