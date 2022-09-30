@@ -204,3 +204,46 @@ add traversals and test them out
 ## branch 50
 
 Here we are going to build an Adjacency Graph, and then we are going to modify it to use real life objects
+
+## branch 51
+
+Now we are going to look at graph traversals
+
+### Breadth First Search
+
+visits the nodes at one level at a time. To prevent visiting the same node more than once, we'll maintain a visited object. Since we need to process the nodes in a First in First out fashion, a queue is a good contender for the data structure to use. The time complexity if O(V+E);
+psuedo code:
+Initialize an empty queue, empty 'result' array & a 'visited' map
+Add the starting vertex to the queue and visited map
+
+```js
+While queue is not empty:
+  -dequeue and store current vertex
+  -push current vertex to a result array
+  -iterate through current vertexs adjacency list
+    -foreach adjacent vertex, is vertex is unvisited:
+      -add vertex to visited map
+      -enqueue vertex
+return result array
+```
+
+### Depth First Search
+
+visits the nodes depth wise. since we need to pricess the nodes in a Last in First out manner, we'll use a stack.
+Starting from a verte, we'll push the neighboring vertices to our stack. Whenever a vertex is popped, it is marked as visited in our visited object. Its neighboring vertices are pushed to the stack. Since we are always popping a new adjacent vertex, our algorithm will always explore a new level
+
+psuedo code:
+
+```js
+function DFS
+   Initialize an empty stack, empty 'result' array & a 'visited' map
+   Add the starting vertex to the stack & visited map
+   While Stack is not empty:
+     - Pop and store current vertex
+     - Push current vertex to result array
+     - Iterate through current vertexs adjacency list:
+       - For each adjacent vertex, if vertex is unvisited:
+         - Add vertex to visited map
+         - Push vertex to stack
+   Return result array
+```

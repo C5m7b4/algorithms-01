@@ -388,39 +388,48 @@ myGraph.addEdge(5, 7);
 
 console.log(myGraph);
 
-import AdjacencyGraphObj from './AdjacencyGraphObj';
-const myAdj = new AdjacencyGraphObj();
-const p1 = { id: 1, name: 'sally', age: 25 };
-const p2 = { id: 2, name: 'bily', age: 27 };
-const p3 = { id: 3, name: 'timmy', age: 17 };
-const p4 = { id: 4, name: 'bertha', age: 19 };
-const p5 = { id: 5, name: 'alex', age: 26 };
-const p6 = { id: 6, name: 'terry', age: 21 };
-const p7 = { id: 7, name: 'beth', age: 22 };
+const bfsResult1 = myGraph.bfs(1);
+console.log(bfsResult1);
+const bfsResult2 = myGraph.bfs(4);
+console.log(bfsResult2);
+const dfs1 = myGraph.dfs(1);
+console.log(dfs1);
+const dfs2 = myGraph.dfs(4);
+console.log(dfs2);
 
-myAdj.addVertex(p1.id);
-myAdj.addVertex(p2.id);
-myAdj.addVertex(p3.id);
+// import AdjacencyGraphObj from './AdjacencyGraphObj';
+// const myAdj = new AdjacencyGraphObj();
+// const p1 = { id: 1, name: 'sally', age: 25 };
+// const p2 = { id: 2, name: 'bily', age: 27 };
+// const p3 = { id: 3, name: 'timmy', age: 17 };
+// const p4 = { id: 4, name: 'bertha', age: 19 };
+// const p5 = { id: 5, name: 'alex', age: 26 };
+// const p6 = { id: 6, name: 'terry', age: 21 };
+// const p7 = { id: 7, name: 'beth', age: 22 };
 
-// connect p1 to p2
-myAdj.addEdge(p1, p2);
-// connect p1 to p4
-myAdj.addEdge(p1, p4);
-//connect p2 to p3
-myAdj.addEdge(p2, p3);
-// connect p4 to p3
-myAdj.addEdge(p4, p3);
-// connect p3 to p5
-myAdj.addEdge(p3, p5);
-// connect p5 to p7
-myAdj.addEdge(p5, p7);
-// connectc p5 to p6
-myAdj.addEdge(p5, p6);
+// myAdj.addVertex(p1.id);
+// myAdj.addVertex(p2.id);
+// myAdj.addVertex(p3.id);
 
-// disconnect 5 from 6
-// myAdj.removeEdge(p5, p6, true);
-// myAdj.removeVertex(p6, true);
-// myAdj.removeEdge(p5.id, p6.id);
-myAdj.removeVertex(p6.id);
+// // connect p1 to p2
+// myAdj.addEdge(p1, p2);
+// // connect p1 to p4
+// myAdj.addEdge(p1, p4);
+// //connect p2 to p3
+// myAdj.addEdge(p2, p3);
+// // connect p4 to p3
+// myAdj.addEdge(p4, p3);
+// // connect p3 to p5
+// myAdj.addEdge(p3, p5);
+// // connect p5 to p7
+// myAdj.addEdge(p5, p7);
+// // connectc p5 to p6
+// myAdj.addEdge(p5, p6);
 
-console.log(myAdj);
+// // disconnect 5 from 6
+// // myAdj.removeEdge(p5, p6, true);
+// // myAdj.removeVertex(p6, true);
+// // myAdj.removeEdge(p5.id, p6.id);
+// myAdj.removeVertex(p6.id);
+
+// console.log(myAdj);
