@@ -200,3 +200,7 @@ add remove functionality to our BST
 ## branch 49
 
 add traversals and test them out
+
+## branch 50
+
+Here we are going to build an Adjacency Graph, and then we are going to modify it to use real life objects
